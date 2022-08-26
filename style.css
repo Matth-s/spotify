@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+body {
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+nav {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    min-width: 1152px;
+    margin: auto;
+    height: 50px;
+}
+.logo {
+    height: 100%;
+    margin-right: auto;
+    cursor: pointer;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.premiere-liste {
+    display: flex;
+    width: 340px;
+    padding-right: 30px;
+    border-right: 1px solid white;
+}
+.deuxieme-liste {
+    width: 220px;
+    padding-left: 30px;
+}
+a:hover {
+    color: rgb(121, 202, 121);
+}
+.premiere-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 710px;
+    background-color: purple;
+}
+
+
+#container-premiere-section {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 60%;
+    min-width: 1152px;
+    height: 80%;
+}
+.element-container-premiere-section:nth-child(1) {
+    width: 60%;
+    height: 100%;
+
+    font-family: Helvetica;
+    color: white;
+}
+.element-container-deuxieme-section:nth-child(2) {
+    width: 38%;
+    height: 68%;
+    margin-top: 90px;
+    background-color: blue;
+}
+.element-container-deuxieme-section:nth-child(2) img {
+    width: 100%;
+    height: 100%;   
+}
+.titre {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+.offre {
+    margin-bottom: 40px;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 72px;
+}
+.publicite {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+.bouton {
+    margin-bottom:40px;
+    height: 50px;
+    padding: 0 15px 0px 15px;
+    border-radius: 30px;
+    align-self: center;
+    border: 0;
+    background-color: black;
+    transform: scale(1);
+    cursor: pointer;
+
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+.bouton:hover {
+    transform: scale(1.10);
+}
+.information {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+.condition {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.deuxieme-section {
+    width: 100%;
+    height : 650px;
+    background-image: url(image/background-section-2.PNG);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+}
+#container-deuxieme-section {
+    margin: auto;
+    width: 60%;
+    min-width: 1152px;
+    height: 330px;
+    color: green;
+}
+#bouton-deux {
+    background-color: green;
+    color: blue;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 530px;
+    background-color: black;
+}
+#container-footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    min-width: 1152px;
+    height: 424px;
+}
+.element-un-container-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 290px;
+}
+.sous-un-element-container-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    min-width: 60%;
+    height: 100%;
+}
+.display-flex{
+    display: flex;
+    flex-direction: column;
+    width: 146.5px;
+    margin-top: 25px;
+    margin-left: 50px;
+    
+    font-size: 12px;
+    font-weight: 900;
+    color: #919196;
+}
+.logo-footer {
+    width: 142px;
+    height: 50px;
+}
+.premiere-ligne-li, .display-flex li  {
+    margin-bottom: 20px;
+}
+.display-flex li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF;
+}
+.display-flex li a:hover {
+    color: green;
+}
+.sous-deux-element-container-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 210px;
+    height: 60px;
+}
+.rond-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60px;
+    background-color: grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.rond-logo:hover .rond-logo-image {
+    filter: grayscale(100%) brightness(80%) sepia(300%) hue-rotate(50deg) saturate(500%);
+}
+.rond-logo-image {
+    width: 35px;
+    height: 35px;
+}
+
+.element-deux-container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+}
+.pied-de-page {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    font-size: 12px
+}
+.pied-de-page-droite {
+    text-align: right;
+    font-size: 12px;
+}
+.derniere-liste {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 120px;
+    height: 50px;
+    
+}

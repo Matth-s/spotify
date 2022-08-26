@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: spotify-circular, Helvetica, Arial, sans-serif ;
+}
+#container-page {
+    width: 25%;
+    min-width: 480px;
+    margin: auto;
+    height: 100vh;
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 382px;
+    border-bottom: 1px solid grey;
+}
+header button {
+    width: 318px;
+    height: 52px;
+    border: 0;
+    border-radius: 40px;
+    transform: scale(1);
+    cursor: pointer;
+}
+header button:hover {
+    transform: scale(1.10);
+}
+.spotify-logo {
+    margin-top: 40px;
+    margin: 40px 0px 50px 0;
+    width: 89px;
+    height: 28px;
+}
+.titre-header {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 38px;
+}
+.inscription-facebook {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    margin-bottom: 24px;
+}
+.rond {
+    position: relative;
+    margin-right: 52px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    margin-left: 24px;
+    background-color: aliceblue;
+}
+.facebook {
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    filter: brightness(0) saturate(100%) invert(9%) sepia(99%) saturate(6839%) hue-rotate(248deg) brightness(93%) contrast(146%);
+}
+.inscription-google {
+    background-color: white;
+    border: 2px solid black;
+    margin-bottom: 32px;
+}
+.ou-header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 55px;
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    background-color: white;
+}
+
+
+
+main {
+    width: 100%;
+    margin-top: 35px;
+}
+.titre-main {
+    margin-bottom: 30px;
+}
+input {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid rgb(48, 46, 46);
+    padding: 15px;
+    margin: 15px 0 30px 0;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+.label {
+    margin-top: 30px;
+}
+.date-de-naissance {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 18px;
+    width: 100%;
+    height: 80px;
+}
+.label-date-de-naissance {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 20px;
+}
+
+.label-date-de-naissance label:nth-child(1) {
+    width: 88px;
+}
+.label-date-de-naissance label:nth-child(2) {
+    width: 200px;
+}
+.label-date-de-naissance label:nth-child(3) {
+    width: 110px;
+}
+.input-date-de-naissance {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 50px;
+}
+.input-date-de-naissance input {
+    margin-top: 0;
+}
+.input-date-de-naissance input:nth-child(1) {
+    width: 88px;
+}
+.input-date-de-naissance select {
+    width: 200px;
+}
+.input-date-de-naissance input:nth-child(3) {
+    width: 110px;
+}
+.label {
+    margin: 30px 0 20px 0;
+}
+
+.radio-box {
+    display: flex;
+    justify-content: space-between;
+    width: 360px; 
+    height: 20px;
+}
+.radio-box input { 
+    margin-top: 0px;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+.radio-box input:hover {
+    border: 1px solid green;
+}
+
+#therme , #partage {
+    width: 16px;
+    height: 16px;
+}
+.texte-checkbox {
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.texte-a {
+    color: green;
+    text-decoration: underline;
+    text-decoration-color: green;
+    cursor: pointer;
+}
+.input-checkbox {
+    margin: 40px 0 0 0;
+}
+.input-checkbox:hover {
+    border: 1px solid green;
+}
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texte {
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}
+.texte:nth-child(2) {
+    margin-top: 15px;
+}
+.bouton-footer {
+    margin: 15px 0px 30px 0;
+    width: 172px;
+    height: 55px;
+    border-radius: 30px;
+    transform: scale(1);
+    cursor: pointer;
+    background-color: green;
+    border: 0;
+}
+
+.bouton-footer:hover {
+    transform: scale(1.20);
+}
+.proposition {
+    margin-bottom: 120px;
+}
+.proposition a {
+    color: green;
+}
