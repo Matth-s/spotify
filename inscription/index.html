@@ -12,71 +12,76 @@
         <header>
             <img class="spotify-logo" src="../image/Capture.PNG" alt="logo spotify">
             <p class="titre-header">Inscrivez-vous gratuitement pour lancer la lecture.</p>
-            <button class="inscription-facebook">
+
+            <button class="inscription-facebook" onclick="window.location.href = 'https://www.facebook.com/login.php?skip_api_login=1&api_key=174829003346&kid_directed_site=0&app_id=174829003346&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv7.0%2Fdialog%2Foauth%3Fclient_id%3D174829003346%26state%3DAQB613tXs0%252F6JIGdg2%252FRQImlPHXc8JnHO1kjAiQdKFNpAHVFItiGYcvAQrl5dC67TlCqUXj8upAj8PSWnlACyZ9x6zQLZt6w%252FUe1RzcD8ypXzYfBht9xe9vsTAOWsU8oFuKZZO8aMG10wYRfiyzO9Q%252FhHlL7uar07C1FUstlNWLzrVE8kg7zknL0Zbn5BLWl9ffUn5AdqALd4Mq5wjwFxb2wtBK%252FLH86MPWfJXyizFLAlslVVEwTKJoMeM7B99vxJXY%253D%26redirect_uri%3Dhttps%253A%252F%252Faccounts.spotify.com%252Flogin%252Ffacebook%252Fredirect%252Fsignup%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D6bccc3b4-31cf-47c5-a4d3-c0f345e503b1%26tp%3Dunspecified&cancel_url=https%3A%2F%2Faccounts.spotify.com%2Flogin%2Ffacebook%2Fredirect%2Fsignup%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DAQB613tXs0%252F6JIGdg2%252FRQImlPHXc8JnHO1kjAiQdKFNpAHVFItiGYcvAQrl5dC67TlCqUXj8upAj8PSWnlACyZ9x6zQLZt6w%252FUe1RzcD8ypXzYfBht9xe9vsTAOWsU8oFuKZZO8aMG10wYRfiyzO9Q%252FhHlL7uar07C1FUstlNWLzrVE8kg7zknL0Zbn5BLWl9ffUn5AdqALd4Mq5wjwFxb2wtBK%252FLH86MPWfJXyizFLAlslVVEwTKJoMeM7B99vxJXY%253D%23_%3D_&display=page&locale=fr_FR&pl_dbl=0';">
                 <span class="rond"><img class="facebook" src="../image/facebook-letter-logo-svgrepo-com.svg" alt="logo facebook"> </span>                                   
                 Inscrivez-vous avez Facebook
             </button>
-            <button class="inscription-google">Inscrivez-vous avec Google</button>
+            
+            <button class="inscription-google" onclick="window.location.href = 'https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&access_type=offline&client_id=1046568431490-ij1gi5shcp2gtorls09frkc56d4mjbe2.apps.googleusercontent.com&state=AQDceh%2B9wQP42s7pwmS61Glc7Xn8%2BF8Y%2BRkBhjOQ9fLjy9U%2BMV7i6%2Fr64Xt9uV2N5HtvIMdafy5dBEu1HDUcBHDJbRzEK5Ur%2B75V3xtq0nIdcsTI8l6MsuMEeIcGcoF3D1vHkjrcjt%2BnQ5%2BpBuf1lkJmrZ8vr1oYNvpInFVTlinf8OXSOVeQow5iPo2gIrAUS%2BEQ8Uuhw2aG19aPXK1PCHuZEWOSLT9T26RYDOlInF%2FcrqdWraY3%2F8RX%2B8RSCJb0Tok%3D&scope=profile%20email%20openid&redirect_uri=https%3A%2F%2Faccounts.spotify.com%2Flogin%2Fgoogle%2Fredirect%2Fsignup&flowName=GeneralOAuthFlow';">
+                <span class="rond"><img src="../image/google.PNG" alt="logo google"> </span>                 
+                  Inscrivez-vous avec Google
+            </button>
             <span class="ou-header">ou</span>
         </header>
         <main>
-            <p class="titre-main">Inscrivez-vous avec votre adresse e-mail</p>
-            <label class="email">Quelle est votre adresse e-mail ?</label>
-            <input type="email" class="email" placeholder="Saisissez votre adresse e-mail.">
-            <label class="email">Confirmer votre adresse mail</label>
-            <input type="email" class="email" placeholder="Saisissez de nouveau votre adresse e-mail.">
-            <label for="mdp">Créez un mot de passe</label>
-            <input type="password" id="mdp" placeholder="Créez un mot de passe.">
-            <label for="profil">Comment doit-on vous appeler ?</label>
-            <input type="text" id="profil" placeholder="Saisissez un nom de profil.">
-            <p>Celui-ci apparaît sur votre profil.</p>
-            <p class="label">Quel est votre date de naissance ?</p>
-            <div class="date-de-naissance">
-                <div class="label-date-de-naissance">
-                    <label for="jour">Jour</label>
-                    <label for="mois">Mois</label>
-                    <label for="annee">Année</label>
+            <form action="#">
+                <p class="titre-main">Inscrivez-vous avec votre adresse e-mail</p>
+                <label class="email">Quelle est votre adresse e-mail ?</label>
+                <input type="email" class="email" placeholder="Saisissez votre adresse e-mail.">
+                <label class="email">Confirmer votre adresse mail</label>
+                <input type="email" class="email" placeholder="Saisissez de nouveau votre adresse e-mail.">
+                <label for="mdp">Créez un mot de passe</label>
+                <input type="password" id="mdp" placeholder="Créez un mot de passe.">
+                <label for="profil">Comment doit-on vous appeler ?</label>
+                <input type="text" id="profil" placeholder="Saisissez un nom de profil.">
+                <p>Celui-ci apparaît sur votre profil.</p>
+                <p class="label">Quel est votre date de naissance ?</p>
+                <div class="date-de-naissance">
+                    <div class="label-date-de-naissance">
+                        <label for="jour">Jour</label>
+                        <label for="mois">Mois</label>
+                        <label for="annee">Année</label>
+                    </div>
+                    <div class="input-date-de-naissance">
+                        <input type="number" name="number" id="jour" placeholder="JJ">
+                        <select name="mois" id="mois">
+                            <option value="false">Mois</option>
+                            <option value="janvier">Janvier</option>
+                            <option value="fevrier">Fevrier</option>
+                            <option value="mars">Mars</option>
+                            <option value="avril">Avril</option>
+                            <option value="mai">Mai</option>
+                            <option value="juin">Juin</option>
+                            <option value="juillet">Juillet</option>
+                            <option value="aout">Aout</option>
+                            <option value="septembre">Septembre</option>
+                            <option value="octobre">Octobre</option>
+                            <option value="novembre">Novembre</option>
+                            <option value="decembre">Decembre</option>
+                        </select>
+                        <input type="number" name="anne" id="annee" placeholder="AAAA">
+                    </div>
                 </div>
-                <div class="input-date-de-naissance">
-                    <input type="number" name="number" id="jour" placeholder="JJ">
-                    <select name="mois" id="mois">
-                        <option value="false">Mois</option>
-                        <option value="janvier">Janvier</option>
-                        <option value="fevrier">Fevrier</option>
-                        <option value="mars">Mars</option>
-                        <option value="avril">Avril</option>
-                        <option value="mai">Mai</option>
-                        <option value="juin">Juin</option>
-                        <option value="juillet">Juillet</option>
-                        <option value="aout">Aout</option>
-                        <option value="septembre">Septembre</option>
-                        <option value="octobre">Octobre</option>
-                        <option value="novembre">Novembre</option>
-                        <option value="decembre">Decembre</option>
-                    </select>
-                    <input type="number" name="anne" id="annee" placeholder="AAAA">
+                <p class="label">Quel est votre sexe ?</p>
+                <div class="radio-box">
+                    <input type="radio" id="Masculin" name="drone" value="masculin">
+                    <label for="Masculin">Masculin</label>
+                    <input type="radio" id="feminin" name="drone" value="feminin">
+                    <label for="feminin">Feminin</label>
+                    <input type="radio" id="Non-binaire" name="drone" value="non-binaire">
+                    <label for="Non-binaire">Non binaire</label>
                 </div>
-            </div>
-            <p class="label">Quel est votre sexe ?</p>
-            <div class="radio-box">
-                <input type="radio" id="Masculin" name="drone" value="masculin">
-                <label for="Masculin">Masculin</label>
-                 <input type="radio" id="feminin" name="drone" value="feminin">
-                <label for="feminin">Feminin</label>
-                <input type="radio" id="Non-binaire" name="drone" value="non-binaire">
-                <label for="Non-binaire">Non binaire</label>
-            </div>
-            <input class="input-checkbox" type="checkbox" name="therme" id="therme">
-            <label class="texte-checkbox" for="therme">J'accepte de recevoir des actualités et des offres de Spotify</label><br>
-            <input class="input-checkbox" type="checkbox" name="partage" id="partage">
-            <label class="texte-checkbox" for="partage">Partagez les données sur mon inscription avec les fournisseurs de contenu de Spotify à des fins de marketing. Notez que vos données peuvent être transférées vers des pays en dehors de l'Espace économique européen, comme précisé dans notre Politique de confidentialité.</label>                          
+                <input class="input-checkbox" type="checkbox" name="therme" id="therme">
+                <label class="texte-checkbox" for="therme">J'accepte de recevoir des actualités et des offres de Spotify</label><br>
+                <input class="input-checkbox" type="checkbox" name="partage" id="partage">
+                <label class="texte-checkbox" for="partage">Partagez les données sur mon inscription avec les fournisseurs de contenu de Spotify à des fins de marketing. Notez que vos données peuvent être transférées vers des pays en dehors de l'Espace économique européen, comme précisé dans notre Politique de confidentialité.</label>           
+                <p class="texte">En cliquant sur le bouton d'inscription, vous acceptez les <a class="texte-a" href="#">Conditions générales d'utilisation de Spotify.</a> </p>
+                <p class="texte">Pour en savoir plus sur la façon dont Spotify recueille, utilise, partage et protège vos données personnelles, veuillez consulter la <a class="texte-a" href="#">Politique de confidentialité de Spotify.</a></p>
+                <button class="bouton-footer">S'inscrire</button>
+                <p class="proposition">Vous avez déjà un compte ? <a href="../connexion/index.html">Connectez-vous.</a></p>    
+            </form>     
         </main>
-        <footer>
-            <p class="texte">En cliquant sur le bouton d'inscription, vous acceptez les <a class="texte-a" href="#">Conditions générales d'utilisation de Spotify.</a> </p>
-            <p class="texte">Pour en savoir plus sur la façon dont Spotify recueille, utilise, partage et protège vos données personnelles, veuillez consulter la <a class="texte-a" href="#">Politique de confidentialité de Spotify.</a></p>
-            <button class="bouton-footer">S'inscrire</button>
-            <p class="proposition">Vous avez déjà un compte ? <a href="connection">Connectez-vous.</a></p>
-        </footer>
     </div>
         
 </body>
