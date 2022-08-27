@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img class="logo-header" src="image/Capture.PNG" alt="logo spotify">
+    </header>
+    <main>
+        <div class="element-un-main">
+            <p class="titre-element-un-main">Pour continuer, connectez-vous à Spotify.</p>
+            <button class="bouton-element-un-main" onclick="window.location.href = 'https://www.facebook.com/login.php?skip_api_login=1&api_key=174829003346&kid_directed_site=0&app_id=174829003346&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv7.0%2Fdialog%2Foauth%3Fclient_id%3D174829003346%26state%3DAQC1AhutxIo339wMTHqk%252FLs4HVPxD06%252FzcwgnEvzrw76RSC%252F3PFh46r9TEkWH9prq7hHszZ61EKROCeAloPmHcIzCAUntfn0UHRlrLmf%252BMUPqESGmBfMy8CVCrFa82YY8sRt2%252BUifs8Cj7TmiKxzvK%252Ff6FrKDQ%252BpvWewmX6kBUUNI8yEJrXbLfBoNS8i%252FXFovCPr6HSFJgrgM0AJHADdeHUAZO%252FO1q6Y7SgqpnJiNTc6UzbV%26redirect_uri%3Dhttps%253A%252F%252Faccounts.spotify.com%252Flogin%252Ffacebook%252Fredirect%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D503e4f05-1d30-4be6-be1e-6d6ad6b6a77a%26tp%3Dunspecified&cancel_url=https%3A%2F%2Faccounts.spotify.com%2Flogin%2Ffacebook%2Fredirect%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DAQC1AhutxIo339wMTHqk%252FLs4HVPxD06%252FzcwgnEvzrw76RSC%252F3PFh46r9TEkWH9prq7hHszZ61EKROCeAloPmHcIzCAUntfn0UHRlrLmf%252BMUPqESGmBfMy8CVCrFa82YY8sRt2%252BUifs8Cj7TmiKxzvK%252Ff6FrKDQ%252BpvWewmX6kBUUNI8yEJrXbLfBoNS8i%252FXFovCPr6HSFJgrgM0AJHADdeHUAZO%252FO1q6Y7SgqpnJiNTc6UzbV%23_%3D_&display=page&locale=fr_FR&pl_dbl=0';"> <img class="image-button-element-main-un" src="image/facebook.PNG" alt="logo facebook"> CONTINUER AVEC FACEBOOK</button>
+            <button class="bouton-element-un-main" onclick="window.location.href = 'https://appleid.apple.com/auth/authorize?client_id=com.spotify.accounts&response_type=code&response_mode=form_post&scope=name%20email&state=AQDaXbV8XdeJseLz737TzOrqe%2BPme7JE%2BvSmOF7f2P2m5sZ3OeVewTYgzEZzHEJKnPx6BNIv%2FyLezpVtAFZpBrAplWodyWxnmo3QAwjyIJmJfpKSXc%2BcPrqV8G2VBUX3cukqKNXxf%2BmYU8jCsAYlJ8ipADCA9CE%2BfNkkhMD7fLP8%2F%2BQVxXrdq6gnjBMVEh07hvp0MvuJDDgiflCHWMFVHzap7Xy%2F20mH0p%2B9yYVD%2FIrF7ekXmT71Wmq2HOrKmTiTdqnX&redirect_uri=https%3A%2F%2Faccounts.spotify.com%2Flogin%2Fapple%2Fredirect';"> <img class="image-button-element-main-un" src="image/apple.PNG" alt="logo appple">CONTINUER AVEC APPLE</button>
+            <button class="bouton-element-un-main" onclick="window.location.href = 'https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&access_type=offline&client_id=1046568431490-ij1gi5shcp2gtorls09frkc56d4mjbe2.apps.googleusercontent.com&state=AQAUAihy3bQGvS22YpFtX4ZvhJmhtdr8rsdlm%2FWL4omIxuzJ3pRByq4bQgCRqqaQPLVSrr%2F34o%2B7x63T0dGJAIzcLHSXCNFQZVcNRenoA2ylJwMmtxTmLVhDOOKuFMOtLDF0XsRjdhBMqhUUXZCiA%2BSPtL7dfmzZXK%2BSmrSlzkrH%2FbmVzaEXWwINgKO4%2FoOViDf9m33o0WG4gedBxTbH4ez4sjMnscoY2YK2f4m%2FwTAeN%2BxR&scope=profile%20email%20openid&redirect_uri=https%3A%2F%2Faccounts.spotify.com%2Flogin%2Fgoogle%2Fredirect&flowName=GeneralOAuthFlow';"> <img class="image-button-element-main-un" src="image/google.PNG" alt="logo google"> CONTINUER AVEC GOOGLE</button>
+            <span class="ou">OU</span>
+        </div>
+        <div class="element-deux-main">
+            <form action="#">
+                <label class="label" for="email">Adresse email ou nom d'utilisateur</label>
+                <input type="email" id="email" placeholder="Adresse email ou nom d'utilisateur">
+                <label class="label" for="mdp">Mot de passe</label>
+                <input type="password" id="mdp" placeholder="Mot de passe">
+                <p class="mot-de-passe-oublie">Mot de passe oublié ?</p>
+                <div class="container-action">
+                    <input class="input-container-action" type="checkbox" name="souvenir" id="souvenir" checked>
+                    <label class="checkbox" for="souvenir">Se souvenir de moi</label>
+                    <button class="bouton-container-action">SE CONNECTER</button>
+                </div>
+            </form>
+        </div>
+        <div class="element-trois-main">
+            <p class="titre-element-trois-main">Vous n'avez pas de compte ?</p>
+            <button class="bouton-element-trois-main" onclick="window.location.href = '../inscription/index.html';">JE N'AI PAS SPOTIFY</button>
+        </div>
+    </main>
+</body>
+</html>
