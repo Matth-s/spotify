@@ -4,53 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav id="nav-header">
-            <img class="logo" src="image/Capture.PNG" alt="logo spotify">
+            <a class="lien-image" href="../index.html"><img class="logo" src="../image/Capture.PNG" alt="logo spotify"></a>
             <ul class="premiere-liste">
-                <li><a href="premium/index.html">Premium</a></li>
+                <li><a href="../premium/index.html">Premium</a></li>
                 <li><a href="#">Assistance</a>
-                <li><a href="telecharger/index.html">Télécharger</a></li>                
+                <li><a href="#">Télécharger</a></li>                
             </ul>
             <ul class="deuxieme-liste">                
-                <li><a href="inscription/index.html">S'inscrire</a></li>
-                <li><a href="connexion/index.html">Connexion</a></li>
+                <li><a href="../inscription/index.html">S'inscrire</a></li>
+                <li><a href="../connexion/index.html">Connexion</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="premiere-section">
-            <div id="container-premiere-section">
-                <div class="element-container-premiere-section">
-                    <p class="titre">SPOTIFY PREMIUM</p>
-                    <p class="offre">Profitez de 3 mois de Spotify Premium pour 0,00 €</p>
-                    <p class="publicite">Écoutez votre musique sans pub, hors connexion, et bien plus encore. Annulez à tout moment.</p>
-                    <button class="bouton" onclick="window.location.href='connexion/index.html';">PROFITEZ DE 3 MOIS GRATUITS</button>
-                    <p class="information">Abonnement Personnel uniquement. 9,99 €/mois par la suite. <span class="condition">Offre soumise à nos Conditions générales.</span> Réservée aux utilisateurs n'ayant jamais testé Premium. Valable jusqu'au 11/09/2022.</p>
-                </div>
-                <div class="element-container-deuxieme-section">
-                    <img src="image/image-section.PNG" alt="image">
+        <div class="container-main-un">
+            <div class="element-container-main-un">
+                <img class="image-element-container-un" src="image/Capture.PNG" alt="pc portable">
+                <p class="titre-element-container-un">Télécharger Spotify</p>
+                <p class="sous-titre-element-container-un">Écoutez des millions de titres et de podcasts sur votre appareil.</p>
+                <button class="bouton-main" onclick="window.location='SpotifySetup.exe';">Télécharger</button>
+            </div>
+        </div>
+        <div class="container-main-deux">
+            <div class="element-container-main-deux">
+                <p class="titre-element-container-main-deux">Écoutez aussi votre musique sur votre mobile et votre tablette.</p>
+                <p class="sous-titre-element-container-un">Écouter sur votre téléphone ou votre tablette est gratuit, facile et amusant.</p>
+                <div class="container-installation">
+                    <img class="image-container-installation" src="image/apple.PNG" alt="apple">
+                    <img class="image-container-installation" src="image/play-store.PNG" alt="play-store">
+                    <img class="image-container-installation" src="image/microsoft.PNG" alt="microsoft">
                 </div>
             </div>
         </div>
-        <div class="deuxieme-section">
-            <div id="container-deuxieme-section">
-                <p class="titre">SPOTIFY FREE</p>
-                <p class="offre">Écouter, ça change tout</p>
-                <p class="publicite">Des millions de titres et de podcasts. Aucune carte de crédit nécessaire.</p>
-                <button class="bouton" id="bouton-deux" onclick="window.location= 'connexion/index.html';">TELECHARGEZ SPOTIFY FREE</button>
+        <div class="container-main-trois">
+            <div class="element-container-main-trois">
+                <img class="image-element-container-main-trois" src="image/image-voiture.PNG" alt="photo arriere plan">
+                <p class="texte-element-container-main-trois">Un compte pour écouter partout.</p>
+                <ul class="liste-element-container-main-trois">
+                    <li>MOBILE</li>
+                    <li>ORDINATEUR</li>
+                    <li>TABLETTE</li>
+                    <li><a href="#">VOITURE</a></li>
+                    <li><a href="#">PLAYSTATION®</a></li>
+                    <li><a href="#">XBOX</a></li>
+                    <li><a href="#">TÉLÉVISION</a></li>
+                    <li><a href="#">ENCEINTE</a></li>
+                    <li><a href="#">LECTEUR WEB</a></li>
+                </ul>
             </div>
         </div>
     </main>
+
     <footer>
         <div id="container-footer">
             <div class="element-un-container-footer">
                 <div class="sous-un-element-container-footer">
-                    <img class="logo-footer" src="image/Capture.PNG" alt="logo spotify">
+                    <img class="logo-footer" src="../image/Capture.PNG" alt="logo spotify">
                     <ul class="display-flex">
                         <li class="premiere-ligne-li">SOCIETE</li>
                         <li><a href="#">A propos</a></li>
@@ -74,13 +89,13 @@
                 </div>
                 <div class="sous-deux-element-container-footer">
                     <div class="rond-logo">
-                        <img class="rond-logo-image" src="image/instagram-seeklogo.com.svg" alt="instagram">
+                        <img class="rond-logo-image" src="../image/instagram-seeklogo.com.svg" alt="instagram">
                     </div>
                     <div class="rond-logo">
-                        <img class="rond-logo-image" src="image/twitter-svgrepo-com.svg" alt="twitter">
+                        <img class="rond-logo-image" src="../image/twitter-svgrepo-com.svg" alt="twitter">
                     </div>
                     <div class="rond-logo">
-                        <img class="rond-logo-image" src="image/facebook-letter-logo-svgrepo-com.svg" alt="facebook">
+                        <img class="rond-logo-image" src="../image/facebook-letter-logo-svgrepo-com.svg" alt="facebook">
                     </div>
                 </div>
             </div>
@@ -101,6 +116,7 @@
             </div>
         </div>
     </footer>
+
     <script src="java.js"></script>
 </body>
 </html>
