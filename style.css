@@ -27,6 +27,11 @@ nav {
     min-width: 1152px;
     margin: auto;
     height: 50px;
+
+    
+    transform: scaleX(0);
+    transform-origin: 50% 0;
+    transition: 1s ease-in;
 }
 .logo {
     height: 100%;
@@ -262,4 +267,14 @@ footer {
     width: 120px;
     height: 50px;
     
+}
+
+
+
+
+
+/*******************************js ******************************************/
+
+.animation-header {
+    transform: scaleX(1);
 }

@@ -13,6 +13,9 @@ a {
 body {
     font-family: spotify-circular, Helvetica, Arial, sans-serif;
 }
+header, main , footer {
+    min-width: 1152px;
+}
 header {
     display: flex;
     align-items: center;
@@ -191,7 +194,7 @@ nav ul {
     flex-direction: column;
     margin: auto;
     margin-bottom: 120px;
-    width: 58%;
+    width: 1113px;
     height: 830px;
 }
 .titre-troisieme-section {
@@ -406,4 +409,14 @@ footer {
     justify-content: space-between;
     width: 120px;
     height: 50px;
+}
+.container-troisieme-section {
+    transform: scaleY(0);
+    transition: 1s ease-in-out;
+    transform-origin: 100% 0;
+}
+
+/***********************js *******************************/
+.animation-tableau {
+    transform: scaleY(1);
 }
