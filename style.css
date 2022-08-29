@@ -20,36 +20,45 @@ header {
     height: 80px;
     background-color: black;
 }
-nav {
+#nav-header {
     display: flex;
     align-items: center;
     width: 60%;
     min-width: 1152px;
     margin: auto;
     height: 50px;
-
-    transform: scaleX(0);
-    transform-origin: 50% 0;
-    transition: 0.4s ease-in;
 }
 .logo {
     height: 100%;
     margin-right: auto;
     cursor: pointer;
 }
-nav ul {
+.nav-menu {
     display: flex;
-    justify-content: space-between;
-    width: 200px;
+    align-items: center;
+    height: 100%;
+    width: 571px;
+    transform: scaleX(0);
+    transform-origin: 0 100%;
+    transition: 0.6s ease-in;
+}
+.toggle {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    display: none;
 }
 .premiere-liste {
     display: flex;
-    width: 340px;
+    justify-content: space-between;
+    width: 350px;
     padding-right: 30px;
     border-right: 1px solid white;
 }
 .deuxieme-liste {
-    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
     padding-left: 30px;
 }
 a:hover {
@@ -79,13 +88,13 @@ a:hover {
     font-family: Helvetica;
     color: white;
 }
-.element-container-deuxieme-section:nth-child(2) {
+.element-container-deuxieme-section {
     width: 38%;
     height: 68%;
     margin-top: 90px;
     background-color: blue;
 }
-.element-container-deuxieme-section:nth-child(2) img {
+.element-container-deuxieme-section img {
     width: 100%;
     height: 100%;   
 }
@@ -276,4 +285,310 @@ footer {
 
 .animation-header {
     transform: scaleX(1);
+}
+
+@media screen and (max-width:1200px) {
+    #nav-header {
+        width: 950px;
+        min-width: 940px;
+    }
+    .premiere-section {
+        height: auto;
+        
+        min-width: 940px;
+    }
+    #container-premiere-section {
+        flex-direction: column;
+        width: auto;
+        min-width: 800px;
+    }
+    .element-container-premiere-section:nth-child(1) {
+        width: 935px;
+        margin: auto;
+    }
+    .titre {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .element-container-deuxieme-section {
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 50px ;
+    }
+    .deuxieme-section {
+        padding-top: 40px;
+    }
+    #container-deuxieme-section {
+        width: 785px;
+        min-width: 600px;
+        margin: auto;
+        text-align: center;
+    }
+
+    #container-footer {
+        width: 950px;
+        min-width: 940px;
+    }
+}
+
+@media screen and (max-width:967px) {
+    header {
+        height: 50px;
+        overflow: hidden;
+    }
+    .logo {
+        height: 40px;
+    }
+    #nav-header {
+        width: 715px;
+        min-width: 715px;
+    }
+    .hamburger , .close {
+        cursor: pointer;
+    }
+    .toggle {
+        display: block;
+    }
+    .close {
+        display: none;
+    }
+    .nav-menu {
+        position: absolute;
+        flex-direction: column;
+        background-color: black;
+        align-items: inherit;
+        height: 95vh;
+        width: 430px;
+        right: 0;
+        top: 50px;
+        transform: translateX(100%);
+    }
+    .deroulant .nav-menu {
+        transform: translateX(0);
+    }
+    .deroulant .hamburger {
+        display: none;
+    }
+    .deroulant .close {
+        display: block;
+    }
+    .nav-menu .premiere-liste, .deuxieme-liste {
+        flex-direction: column;
+        border: 0;
+        padding: 0;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .premiere-liste {
+        height: 200px;
+        justify-content: space-around;
+        border-bottom: 2px solid white;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    .deuxieme-liste {
+        margin-top: 40px;
+        height: 70px;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .premiere-section {
+        height: auto;        
+        min-width: 715px;
+    }
+    #container-premiere-section {
+        flex-direction: column;
+        width: auto;
+        min-width: 715px;
+    }
+    .element-container-premiere-section:nth-child(1) {
+        width: 715px;
+        margin: auto;
+    }
+    .titre {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .element-container-deuxieme-section {
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 50px ;
+    }
+    .deuxieme-section {
+        padding-top: 40px;
+    }
+    #container-deuxieme-section {
+        width: 715px;
+        min-width: 715px;
+        margin: auto;
+        text-align: center;
+    }
+    #container-footer {
+        width: 715px;
+        min-width: 715px;
+    }
+    .element-un-container-footer {
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+        width: 715px;
+        min-width: 715px;
+        background-color: orange;
+    }
+    .sous-deux-element-container-footer {
+        background-color: red;
+        height: 50px;
+    }
+    .rond-logo {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width:740px) {
+    header {
+        height: 50px;
+        overflow: hidden;
+    }
+    .logo {
+        height: 40px;
+    }
+    #nav-header {
+        width: 91%;
+        min-width: 150px;
+    }
+    .hamburger , .close {
+        cursor: pointer;
+    }
+    .toggle {
+        display: block;
+    }
+    .close {
+        display: none;
+    }
+    .nav-menu {
+        position: absolute;
+        flex-direction: column;
+        background-color: black;
+        z-index: 99999;
+        align-items: inherit;
+        height: 95vh;
+        width: 95%;
+        right: 0;
+        top: 50px;
+        transform: translateX(100%);
+    }
+    .deroulant .nav-menu {
+        transform: translateX(0);
+    }
+    .deroulant .hamburger {
+        display: none;
+    }
+    .deroulant .close {
+        display: block;
+    }
+    .nav-menu .premiere-liste, .deuxieme-liste {
+        flex-direction: column;
+        border: 0;
+        padding: 0;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .premiere-liste {
+        height: 200px;
+        justify-content: space-around;
+        border-bottom: 2px solid white;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    .deuxieme-liste {
+        margin-top: 40px;
+        height: 70px;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .premiere-section {
+        height: auto;        
+        min-width: 150px;
+    }
+    #container-premiere-section {
+        flex-direction: column;
+        width: auto;
+        min-width: 150px;
+    }
+    .element-container-premiere-section:nth-child(1) {
+        width: 91%;
+        min-width: 150px;
+        margin: auto;
+    }
+    .titre {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .element-container-deuxieme-section {
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 50px ;
+    }
+    .element-container-deuxieme-section {
+        width: 71%;
+    }
+    .deuxieme-section {
+        padding-top: 40px;
+        height: auto;
+    }
+    #container-deuxieme-section {
+        width: 91%;
+        height: auto;
+        min-width: 150px;
+        margin: auto;
+        text-align: center;
+    }
+    footer {
+        height: 1000px;
+    }
+
+    #container-footer {
+        width: 91%;
+        height: auto;
+        min-width: 150px;
+    }
+    .element-un-container-footer {
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+        width: 91%;
+        min-width: 150px;
+        background-color: orange;
+    }
+    .sous-deux-element-container-footer {
+        background-color: red;
+        height: 50px;
+    }
+    .rond-logo {
+        height: 50px;
+        width: 50px;
+    }
+    .sous-un-element-container-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .element-deux-container-footer ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .pied-de-page {
+        padding: 10px;
+    }
 }
