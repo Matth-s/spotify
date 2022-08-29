@@ -3,10 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    overflow: hidden;
-    overflow: scroll;
-}
 li {
     list-style-type: none;
 }
@@ -16,6 +12,8 @@ a {
 }
 body {
     font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    overflow: scroll;
 }
 header {
     display: flex;
@@ -338,9 +336,6 @@ footer {
 }
 
 @media screen and (max-width:967px) {
-    body {
-        overflow: hidden;
-    }
     header {
         height: 50px;
     }
@@ -456,6 +451,10 @@ footer {
 }
 
 @media screen and (max-width:740px) {
+    body {
+        overflow: hidden scroll;
+        
+    }
     header {
         height: 50px;
     }
