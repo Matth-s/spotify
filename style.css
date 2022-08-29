@@ -5,6 +5,7 @@
 }
 body {
     overflow: hidden;
+    overflow: scroll;
 }
 li {
     list-style-type: none;
@@ -568,6 +569,7 @@ footer {
         flex-direction: column;
         height: auto;
         margin: auto;
+        margin-bottom: 60px;
         width: 91%;
         min-width: 150px;
     }
