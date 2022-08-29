@@ -467,6 +467,7 @@ footer {
     }
     .hamburger , .close {
         cursor: pointer;
+        z-index: 99;
     }
     .toggle {
         display: block;
