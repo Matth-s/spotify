@@ -12,7 +12,6 @@ a {
 }
 body {
     font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    overflow: hidden;
 }
 header {
     display: flex;
@@ -179,7 +178,6 @@ header {
     align-items: center;
     width: 24.5%;
     height: 100%;
-
     text-align: center;
 }
 .element-argument-deuxieme-section img {
@@ -569,8 +567,6 @@ footer {
         min-width: 720px;
     }
     .deuxieme-section {
-        align-items: center;
-        align-items: center;
         height: auto;
     }
     .element-argument-deuxieme-section {
@@ -617,6 +613,7 @@ footer {
 @media screen and (max-width: 740px) {
     header {
         height: 50px;
+        background-color: red;
     }
     .logo {
         height: 40px;
@@ -624,6 +621,7 @@ footer {
     #nav-header {
         width: 91%;
         min-width: 150px;
+        background-color: red;
     }
     .hamburger , .close {
         cursor: pointer;
@@ -700,20 +698,23 @@ footer {
         width: 90%;
     }
     .element-container-premiere-section:nth-child(2) img {
-        width: 100%;
+        width: 0%;
     }
     .titre-deuxieme-section {
         font-size: 13px; 
         margin-bottom: 15px;
-        background-color: orange;
         width: 100%;
     }
     .deuxieme-section {
-        width: 280px;
-        min-width: 280px;
+        
     }
     .argument-deuxieme-section {
-        width: 280px;
+        width: 270px;
+        min-width: 270px;
+    }
+    .titre-element-argument-deuxieme-section {
+        width: 92%;
+        margin: 0;
     }
     .element-argument-deuxieme-section {
         flex-direction: column;
