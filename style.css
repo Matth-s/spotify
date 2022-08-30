@@ -451,8 +451,7 @@ footer {
 
 @media screen and (max-width:740px) {
     body {
-        overflow: hidden scroll;
-        
+        overflow: hidden;       
     }
     header {
         height: 50px;
