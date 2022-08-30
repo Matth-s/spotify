@@ -613,7 +613,6 @@ footer {
 @media screen and (max-width: 740px) {
     header {
         height: 50px;
-        background-color: red;
     }
     .logo {
         height: 40px;
@@ -621,7 +620,6 @@ footer {
     #nav-header {
         width: 91%;
         min-width: 150px;
-        background-color: red;
     }
     .hamburger , .close {
         cursor: pointer;
