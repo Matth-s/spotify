@@ -12,7 +12,6 @@ a {
 }
 body {
     font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    overflow-y: hidden; 
     overflow: hidden;
 }
 header {
@@ -480,10 +479,10 @@ footer {
         width: 95%;
         right: 0;
         top: 50px;
-        transform: translateX(100%);
+        transform: scaleX(100%);
     }
     .deroulant .nav-menu {
-        transform: translateX(0);
+        transform: scaleX(0);
     }
     .deroulant .hamburger {
         display: none;
