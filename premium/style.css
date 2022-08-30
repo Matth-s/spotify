@@ -462,6 +462,9 @@ footer {
         margin-top: 50px;
         margin-bottom: 50px;
     }
+    .deuxieme-section {
+        width: auto;
+    }
     .argument-deuxieme-section {
         width: 905px;
         flex-wrap: wrap;
@@ -567,8 +570,19 @@ footer {
         width: 720px;
         min-width: 720px;
     }
+    .deuxieme-section {
+        align-items: center;
+        align-items: center;
+        height: auto;
+    }
+    .element-argument-deuxieme-section {
+        align-self: center;
+    }
     .argument-deuxieme-section {
         width: 720px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         min-width: 715px;
         flex-wrap: wrap;
         height: auto;
@@ -600,5 +614,172 @@ footer {
     .derniere-liste {
         margin-top: 20px;
         text-align: center;
+    }
+}
+@media screen and (max-width: 740px) {
+    body {
+        overflow: hidden scroll;
+    }
+    header {
+        height: 50px;
+    }
+    .logo {
+        height: 40px;
+    }
+    #nav-header {
+        width: 91%;
+        min-width: 150px;
+    }
+    .hamburger , .close {
+        cursor: pointer;
+        z-index: 99;
+    }
+    .toggle {
+        display: block;
+    }
+    .close {
+        display: none;
+    }
+    .nav-menu {
+        position: absolute;
+        flex-direction: column;
+        background-color: black;
+        z-index: 99999;
+        align-items: inherit;
+        height: 95vh;
+        width: 95%;
+        right: 0;
+        top: 50px;
+        transform: translateX(100%);
+    }
+    .deroulant .nav-menu {
+        transform: translateX(0);
+    }
+    .deroulant .hamburger {
+        display: none;
+    }
+    .deroulant .close {
+        display: block;
+    }
+    .nav-menu .premiere-liste, .deuxieme-liste {
+        flex-direction: column;
+        border: 0;
+        padding: 0;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .premiere-liste {
+        height: 200px;
+        justify-content: space-around;
+        border-bottom: 2px solid white;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    .deuxieme-liste {
+        margin-top: 40px;
+        height: 70px;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    #container-premiere-section {
+        width: 98%;
+        min-width: 310px;
+        margin: auto;
+    }
+    .div-bouton {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .bouton {
+        width: 85%;
+        padding: 20px;
+        height: auto;
+    }
+    .bouton:nth-child(1) {
+        margin-bottom: 10px;
+    }
+    .element-container-premiere-section:nth-child(2) {
+        width: 90%;
+    }
+    .element-container-premiere-section:nth-child(2) img {
+        width: 100%;
+    }
+    .titre-deuxieme-section {
+        font-size: 16px;
+    }
+    .deuxieme-section {
+        width: 280px;
+        min-width: 280px;
+    }
+    .titre-deuxieme-section {
+        margin-bottom: 15px;
+    }
+    .argument-deuxieme-section {
+        width: 280px;
+    }
+    .element-argument-deuxieme-section {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 280px;
+    }
+    .element-argument-deuxieme-section img {
+        margin-bottom: 5px;
+    }
+    .texte-element-argument-deuxieme-section {
+        margin-bottom: 50px;
+    }
+    .troisieme-section {
+        width: 100%;
+    }
+    .element-container-troisieme-section {
+        width: 275px;
+        min-width: 275px;
+    }
+    footer {
+        height: 1000px;
+    }
+
+    #container-footer {
+        width: 230px;
+        margin: auto;
+        height: auto;
+        min-width: 150px;
+        align-items: center;
+    }
+    .element-un-container-footer {
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+        margin-bottom: 60px;
+        width: 91%;
+        min-width: 150px;
+    }
+    .sous-deux-element-container-footer {
+        height: 50px;
+    }
+    .rond-logo {
+        height: 50px;
+        width: 50px;
+    }
+    .sous-un-element-container-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .element-deux-container-footer ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .pied-de-page-droite {
+        display: none;
+    }
+    .sous-deux-element-container-footer {
+        margin-top: 50px;
+    }
+    .element-deux-container-footer {
+        display: none;
     }
 }
