@@ -12,7 +12,8 @@ a {
 }
 body {
     font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 header {
     display: flex;
