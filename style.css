@@ -12,7 +12,8 @@ a {
 }
 body {
     font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    overflow-x: hidden; 
+    overflow-y: hidden; 
+    overflow: hidden;
 }
 header {
     display: flex;
@@ -334,9 +335,6 @@ footer {
 }
 
 @media screen and (max-width:967px) {
-    body {
-        overflow-x: hidden; 
-    }
     header {
         height: 50px;
     }
@@ -452,9 +450,6 @@ footer {
 }
 
 @media screen and (max-width:740px) {
-    body {
-        overflow-x: hidden;   
-    }
     header {
         height: 50px;
     }
