@@ -40,7 +40,7 @@ header {
     width: 571px;
     transform: scale(0);
     transform-origin: 0 100%;
-    transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in;
     z-index: 99;
 }
 .toggle {
@@ -476,11 +476,10 @@ footer {
         background-color: black;
         align-items: inherit;
         height: 95vh;
-        width: 430px;
+        width: 95%;
         right: 0;
         top: 50px;
         transform: scaleX(0);
-        transform-origin: 100% 0;
     }
     .deroulant .nav-menu {
         transform: scaleX(1);
