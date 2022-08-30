@@ -13,7 +13,7 @@ a {
 body {
     font-family: spotify-circular, Helvetica, Arial, sans-serif;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow : hidden scroll;
 }
 header {
     display: flex;
