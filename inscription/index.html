@@ -65,12 +65,18 @@
                 </div>
                 <p class="label">Quel est votre sexe ?</p>
                 <div class="radio-box">
-                    <input type="radio" id="Masculin" name="drone" value="masculin">
-                    <label for="Masculin">Masculin</label>
-                    <input type="radio" id="feminin" name="drone" value="feminin">
-                    <label for="feminin">Feminin</label>
-                    <input type="radio" id="Non-binaire" name="drone" value="non-binaire">
-                    <label for="Non-binaire">Non binaire</label>
+                    <div class="element-radio-box">
+                        <input type="radio" id="Masculin" name="drone" value="masculin">
+                        <label for="Masculin">Masculin</label>
+                    </div>
+                    <div class="element-radio-box">
+                        <input type="radio" id="feminin" name="drone" value="feminin">
+                         <label for="feminin">Feminin</label>
+                    </div>
+                    <div class="element-radio-box">
+                        <input type="radio" id="Non-binaire" name="drone" value="non-binaire">
+                        <label for="Non-binaire">Non binaire</label>
+                    </div>                    
                 </div>
                 <input class="input-checkbox" type="checkbox" name="therme" id="therme">
                 <label class="texte-checkbox" for="therme">J'accepte de recevoir des actualités et des offres de Spotify</label><br>
@@ -78,7 +84,7 @@
                 <label class="texte-checkbox" for="partage">Partagez les données sur mon inscription avec les fournisseurs de contenu de Spotify à des fins de marketing. Notez que vos données peuvent être transférées vers des pays en dehors de l'Espace économique européen, comme précisé dans notre Politique de confidentialité.</label>           
                 <p class="texte">En cliquant sur le bouton d'inscription, vous acceptez les <a class="texte-a" href="#">Conditions générales d'utilisation de Spotify.</a> </p>
                 <p class="texte">Pour en savoir plus sur la façon dont Spotify recueille, utilise, partage et protège vos données personnelles, veuillez consulter la <a class="texte-a" href="#">Politique de confidentialité de Spotify.</a></p>
-                <button class="bouton-footer">S'inscrire</button>
+                <input type="submit" class="bouton-footer" value="S'inscrire">
                 <p class="proposition">Vous avez déjà un compte ? <a href="../connexion/index.html">Connectez-vous.</a></p>    
             </form>     
         </main>
